@@ -1,0 +1,27 @@
+var NAVTREEINDEX0 =
+{
+"annotated.html":[0,0],
+"classes.html":[0,1],
+"classmain2_1_1_bodyweight_exercise.html":[0,0,0,0],
+"classmain2_1_1_bodyweight_exercise.html#a5c819bc597032bd15f608e0f11250c8a":[0,0,0,0,0],
+"classmain2_1_1_database.html":[0,0,0,1],
+"classmain2_1_1_exercise.html":[0,0,0,2],
+"classmain2_1_1_exercise.html#a2dfe0958fc873569e2c981a46d4a5ca3":[0,0,0,2,0],
+"classmain2_1_1_weight_exercise.html":[0,0,0,3],
+"classmain2_1_1_weight_exercise.html#a96b34456b12bac5afe52e6949796fe85":[0,0,0,3,0],
+"classmain2_1_1_workout_bot.html":[0,0,0,4],
+"classmain2_1_1_workout_bot.html#a243933ab3618928a92a8f3ae917af758":[0,0,0,4,4],
+"classmain2_1_1_workout_bot.html#a869d4eab3675332d3e222abd32261191":[0,0,0,4,0],
+"classmain2_1_1_workout_bot.html#a8e16603f3a34f7340446503b2a64d0fb":[0,0,0,4,7],
+"classmain2_1_1_workout_bot.html#a99d0674f0c64bde89b5ee2bbf52f00b9":[0,0,0,4,2],
+"classmain2_1_1_workout_bot.html#aa6f95d3bf2b8e40efedf2fe8b4b0dc25":[0,0,0,4,3],
+"classmain2_1_1_workout_bot.html#abd3e98d28abf037f7e9e400ed23cd56f":[0,0,0,4,8],
+"classmain2_1_1_workout_bot.html#abd8a312d7cbed41bc7cc4343b4b6146c":[0,0,0,4,1],
+"classmain2_1_1_workout_bot.html#ac7fb22432b9329cbae61672f2bf67f38":[0,0,0,4,5],
+"classmain2_1_1_workout_bot.html#ae06e53228871abec7fd0574f5f6f0bf7":[0,0,0,4,6],
+"functions.html":[0,3,0],
+"functions_func.html":[0,3,1],
+"hierarchy.html":[0,2],
+"index.html":[],
+"pages.html":[]
+};

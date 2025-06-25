@@ -1,0 +1,171 @@
+\doxysection{main2.\+Workout\+Bot Class Reference}
+\hypertarget{classmain2_1_1_workout_bot}{}\label{classmain2_1_1_workout_bot}\index{main2.WorkoutBot@{main2.WorkoutBot}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classmain2_1_1_workout_bot_a23c5606a8e1af15163425abd714998c4}\label{classmain2_1_1_workout_bot_a23c5606a8e1af15163425abd714998c4} 
+{\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, str token)
+\item 
+Dict \mbox{\hyperlink{classmain2_1_1_workout_bot_abd8a312d7cbed41bc7cc4343b4b6146c}{get\+\_\+user\+\_\+data}} (self, int user\+\_\+id)
+\item 
+Reply\+Keyboard\+Markup \mbox{\hyperlink{classmain2_1_1_workout_bot_a243933ab3618928a92a8f3ae917af758}{main\+\_\+menu\+\_\+keyboard}} (self)
+\item 
+None \mbox{\hyperlink{classmain2_1_1_workout_bot_abd3e98d28abf037f7e9e400ed23cd56f}{start}} (self, Update update, Context\+Types.\+DEFAULT\+\_\+\+TYPE context)
+\item 
+None \mbox{\hyperlink{classmain2_1_1_workout_bot_a8e16603f3a34f7340446503b2a64d0fb}{show\+\_\+workout\+\_\+history}} (self, Update update, int user\+\_\+id)
+\item 
+None \mbox{\hyperlink{classmain2_1_1_workout_bot_ae06e53228871abec7fd0574f5f6f0bf7}{show\+\_\+exercise\+\_\+stats}} (self, Update update, int user\+\_\+id, str exercise\+\_\+name)
+\item 
+bool \mbox{\hyperlink{classmain2_1_1_workout_bot_aa6f95d3bf2b8e40efedf2fe8b4b0dc25}{handle\+\_\+new\+\_\+exercise}} (self, Update update, Dict user\+\_\+data, str text)
+\item 
+None \mbox{\hyperlink{classmain2_1_1_workout_bot_a99d0674f0c64bde89b5ee2bbf52f00b9}{handle\+\_\+message}} (self, Update update, Context\+Types.\+DEFAULT\+\_\+\+TYPE context)
+\item 
+\mbox{\hyperlink{classmain2_1_1_workout_bot_ac7fb22432b9329cbae61672f2bf67f38}{run}} (self)
+\item 
+\mbox{\hyperlink{classmain2_1_1_workout_bot_a869d4eab3675332d3e222abd32261191}{\+\_\+\+\_\+del\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classmain2_1_1_workout_bot_ab0ec5d454af47447918cdcfb17f0333f}\label{classmain2_1_1_workout_bot_ab0ec5d454af47447918cdcfb17f0333f} 
+{\bfseries token} = token
+\item 
+\Hypertarget{classmain2_1_1_workout_bot_a5fbccaf5ee4499d7691c47e4569bd60d}\label{classmain2_1_1_workout_bot_a5fbccaf5ee4499d7691c47e4569bd60d} 
+{\bfseries db} = \mbox{\hyperlink{classmain2_1_1_database}{Database}}()
+\item 
+dict \mbox{\hyperlink{classmain2_1_1_workout_bot_a5e7a996a912471e3cc7cb34e3a1e7bca}{MUSCLE\+\_\+\+GROUPS}}
+\item 
+dict \mbox{\hyperlink{classmain2_1_1_workout_bot_a92ad076907560bc2f0fa0cc735456d69}{DEFAULT\+\_\+\+EXERCISES}}
+\item 
+\Hypertarget{classmain2_1_1_workout_bot_a9085a8c2db1e7ce2d2cf8f9f046178bc}\label{classmain2_1_1_workout_bot_a9085a8c2db1e7ce2d2cf8f9f046178bc} 
+dict {\bfseries user\+\_\+data\+\_\+storage} = \{\}
+\item 
+\Hypertarget{classmain2_1_1_workout_bot_ae61eb6ab4291773e0662c089ce7d5515}\label{classmain2_1_1_workout_bot_ae61eb6ab4291773e0662c089ce7d5515} 
+{\bfseries start}
+\item 
+\Hypertarget{classmain2_1_1_workout_bot_a0f8eba669dfb120671f04b57beb0d7ad}\label{classmain2_1_1_workout_bot_a0f8eba669dfb120671f04b57beb0d7ad} 
+{\bfseries handle\+\_\+message}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Основной класс тренировочного бота\end{DoxyVerb}
+ 
+
+\label{doc-constructors}
+\Hypertarget{classmain2_1_1_workout_bot_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classmain2_1_1_workout_bot_a869d4eab3675332d3e222abd32261191}\index{main2.WorkoutBot@{main2.WorkoutBot}!\_\_del\_\_@{\_\_del\_\_}}
+\index{\_\_del\_\_@{\_\_del\_\_}!main2.WorkoutBot@{main2.WorkoutBot}}
+\doxysubsubsection{\texorpdfstring{\_\_del\_\_()}{\_\_del\_\_()}}
+{\footnotesize\ttfamily \label{classmain2_1_1_workout_bot_a869d4eab3675332d3e222abd32261191} 
+main2.\+Workout\+Bot.\+\_\+\+\_\+del\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Завершение работы с закрытием соединения с БД\end{DoxyVerb}
+ 
+
+\label{doc-func-members}
+\Hypertarget{classmain2_1_1_workout_bot_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classmain2_1_1_workout_bot_abd8a312d7cbed41bc7cc4343b4b6146c}\index{main2.WorkoutBot@{main2.WorkoutBot}!get\_user\_data@{get\_user\_data}}
+\index{get\_user\_data@{get\_user\_data}!main2.WorkoutBot@{main2.WorkoutBot}}
+\doxysubsubsection{\texorpdfstring{get\_user\_data()}{get\_user\_data()}}
+{\footnotesize\ttfamily \label{classmain2_1_1_workout_bot_abd8a312d7cbed41bc7cc4343b4b6146c} 
+ Dict main2.\+Workout\+Bot.\+get\+\_\+user\+\_\+data (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int}]{user\+\_\+id}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Получение данных пользователя\end{DoxyVerb}
+ \Hypertarget{classmain2_1_1_workout_bot_a99d0674f0c64bde89b5ee2bbf52f00b9}\index{main2.WorkoutBot@{main2.WorkoutBot}!handle\_message@{handle\_message}}
+\index{handle\_message@{handle\_message}!main2.WorkoutBot@{main2.WorkoutBot}}
+\doxysubsubsection{\texorpdfstring{handle\_message()}{handle\_message()}}
+{\footnotesize\ttfamily \label{classmain2_1_1_workout_bot_a99d0674f0c64bde89b5ee2bbf52f00b9} 
+ None main2.\+Workout\+Bot.\+handle\+\_\+message (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Update}]{update}{, }\item[{Context\+Types.\+DEFAULT\+\_\+\+TYPE}]{context}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Основной обработчик сообщений\end{DoxyVerb}
+ \Hypertarget{classmain2_1_1_workout_bot_aa6f95d3bf2b8e40efedf2fe8b4b0dc25}\index{main2.WorkoutBot@{main2.WorkoutBot}!handle\_new\_exercise@{handle\_new\_exercise}}
+\index{handle\_new\_exercise@{handle\_new\_exercise}!main2.WorkoutBot@{main2.WorkoutBot}}
+\doxysubsubsection{\texorpdfstring{handle\_new\_exercise()}{handle\_new\_exercise()}}
+{\footnotesize\ttfamily \label{classmain2_1_1_workout_bot_aa6f95d3bf2b8e40efedf2fe8b4b0dc25} 
+ bool main2.\+Workout\+Bot.\+handle\+\_\+new\+\_\+exercise (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Update}]{update}{, }\item[{Dict}]{user\+\_\+data}{, }\item[{str}]{text}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Обработка ввода данных нового упражнения\end{DoxyVerb}
+ \Hypertarget{classmain2_1_1_workout_bot_a243933ab3618928a92a8f3ae917af758}\index{main2.WorkoutBot@{main2.WorkoutBot}!main\_menu\_keyboard@{main\_menu\_keyboard}}
+\index{main\_menu\_keyboard@{main\_menu\_keyboard}!main2.WorkoutBot@{main2.WorkoutBot}}
+\doxysubsubsection{\texorpdfstring{main\_menu\_keyboard()}{main\_menu\_keyboard()}}
+{\footnotesize\ttfamily \label{classmain2_1_1_workout_bot_a243933ab3618928a92a8f3ae917af758} 
+ Reply\+Keyboard\+Markup main2.\+Workout\+Bot.\+main\+\_\+menu\+\_\+keyboard (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Клавиатура главного меню\end{DoxyVerb}
+ \Hypertarget{classmain2_1_1_workout_bot_ac7fb22432b9329cbae61672f2bf67f38}\index{main2.WorkoutBot@{main2.WorkoutBot}!run@{run}}
+\index{run@{run}!main2.WorkoutBot@{main2.WorkoutBot}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily \label{classmain2_1_1_workout_bot_ac7fb22432b9329cbae61672f2bf67f38} 
+main2.\+Workout\+Bot.\+run (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Запуск бота\end{DoxyVerb}
+ \Hypertarget{classmain2_1_1_workout_bot_ae06e53228871abec7fd0574f5f6f0bf7}\index{main2.WorkoutBot@{main2.WorkoutBot}!show\_exercise\_stats@{show\_exercise\_stats}}
+\index{show\_exercise\_stats@{show\_exercise\_stats}!main2.WorkoutBot@{main2.WorkoutBot}}
+\doxysubsubsection{\texorpdfstring{show\_exercise\_stats()}{show\_exercise\_stats()}}
+{\footnotesize\ttfamily \label{classmain2_1_1_workout_bot_ae06e53228871abec7fd0574f5f6f0bf7} 
+ None main2.\+Workout\+Bot.\+show\+\_\+exercise\+\_\+stats (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Update}]{update}{, }\item[{int}]{user\+\_\+id}{, }\item[{str}]{exercise\+\_\+name}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Отображение статистики по упражнению\end{DoxyVerb}
+ \Hypertarget{classmain2_1_1_workout_bot_a8e16603f3a34f7340446503b2a64d0fb}\index{main2.WorkoutBot@{main2.WorkoutBot}!show\_workout\_history@{show\_workout\_history}}
+\index{show\_workout\_history@{show\_workout\_history}!main2.WorkoutBot@{main2.WorkoutBot}}
+\doxysubsubsection{\texorpdfstring{show\_workout\_history()}{show\_workout\_history()}}
+{\footnotesize\ttfamily \label{classmain2_1_1_workout_bot_a8e16603f3a34f7340446503b2a64d0fb} 
+ None main2.\+Workout\+Bot.\+show\+\_\+workout\+\_\+history (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Update}]{update}{, }\item[{int}]{user\+\_\+id}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Отображение истории тренировок\end{DoxyVerb}
+ \Hypertarget{classmain2_1_1_workout_bot_abd3e98d28abf037f7e9e400ed23cd56f}\index{main2.WorkoutBot@{main2.WorkoutBot}!start@{start}}
+\index{start@{start}!main2.WorkoutBot@{main2.WorkoutBot}}
+\doxysubsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily \label{classmain2_1_1_workout_bot_abd3e98d28abf037f7e9e400ed23cd56f} 
+ None main2.\+Workout\+Bot.\+start (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Update}]{update}{, }\item[{Context\+Types.\+DEFAULT\+\_\+\+TYPE}]{context}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Обработчик команды /start\end{DoxyVerb}
+ 
+
+\label{doc-variable-members}
+\Hypertarget{classmain2_1_1_workout_bot_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classmain2_1_1_workout_bot_a92ad076907560bc2f0fa0cc735456d69}\index{main2.WorkoutBot@{main2.WorkoutBot}!DEFAULT\_EXERCISES@{DEFAULT\_EXERCISES}}
+\index{DEFAULT\_EXERCISES@{DEFAULT\_EXERCISES}!main2.WorkoutBot@{main2.WorkoutBot}}
+\doxysubsubsection{\texorpdfstring{DEFAULT\_EXERCISES}{DEFAULT\_EXERCISES}}
+{\footnotesize\ttfamily \label{classmain2_1_1_workout_bot_a92ad076907560bc2f0fa0cc735456d69} 
+dict main2.\+Workout\+Bot.\+DEFAULT\+\_\+\+EXERCISES}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}back"{}}:\ [\textcolor{stringliteral}{"{}Подтягивания"{}},\ \textcolor{stringliteral}{"{}Тяга\ штанги"{}},\ \textcolor{stringliteral}{"{}Тяга\ гантели"{}}],}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}chest"{}}:\ [\textcolor{stringliteral}{"{}Жим\ штанги"{}},\ \textcolor{stringliteral}{"{}Жим\ гантелей"{}},\ \textcolor{stringliteral}{"{}Разводка\ гантелей"{}}],}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}legs"{}}:\ [\textcolor{stringliteral}{"{}Приседания"{}},\ \textcolor{stringliteral}{"{}Становая\ тяга"{}},\ \textcolor{stringliteral}{"{}Выпады"{}}],}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}arms"{}}:\ [\textcolor{stringliteral}{"{}Жим\ штанги\ узким\ хватом"{}},\ \textcolor{stringliteral}{"{}Подъем\ гантелей\ на\ бицепс"{}},\ \textcolor{stringliteral}{"{}Французский\ жим"{}}],}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}shoulders"{}}:\ [\textcolor{stringliteral}{"{}Жим\ Арнольда"{}},\ \textcolor{stringliteral}{"{}Махи\ гантелями"{}},\ \textcolor{stringliteral}{"{}Подъем\ передних\ дельт"{}}],}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}abs"{}}:\ [\textcolor{stringliteral}{"{}Скручивания"{}},\ \textcolor{stringliteral}{"{}Планка"{}},\ \textcolor{stringliteral}{"{}Обратные\ скручивания"{}}]}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{classmain2_1_1_workout_bot_a5e7a996a912471e3cc7cb34e3a1e7bca}\index{main2.WorkoutBot@{main2.WorkoutBot}!MUSCLE\_GROUPS@{MUSCLE\_GROUPS}}
+\index{MUSCLE\_GROUPS@{MUSCLE\_GROUPS}!main2.WorkoutBot@{main2.WorkoutBot}}
+\doxysubsubsection{\texorpdfstring{MUSCLE\_GROUPS}{MUSCLE\_GROUPS}}
+{\footnotesize\ttfamily \label{classmain2_1_1_workout_bot_a5e7a996a912471e3cc7cb34e3a1e7bca} 
+dict main2.\+Workout\+Bot.\+MUSCLE\+\_\+\+GROUPS}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}back"{}}:\ \textcolor{stringliteral}{"{}Спина"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}chest"{}}:\ \textcolor{stringliteral}{"{}Грудь"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}legs"{}}:\ \textcolor{stringliteral}{"{}Ноги"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}arms"{}}:\ \textcolor{stringliteral}{"{}Руки"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}shoulders"{}}:\ \textcolor{stringliteral}{"{}Плечи"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}abs"{}}:\ \textcolor{stringliteral}{"{}Пресс"{}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+db/main2.\+py\end{DoxyCompactItemize}
