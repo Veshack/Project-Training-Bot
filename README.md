@@ -22,12 +22,7 @@ Telegram-бот для спортсменов, который:
    cd workout-bot
    ```
 
-2. Установите зависимости:  
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-3. Настройте бота:  
+2. Настройте бота:  
    - Получите токен у [@BotFather](https://t.me/BotFather)  
    - Создайте файл `.env`:  
      ```ini
@@ -35,9 +30,9 @@ Telegram-бот для спортсменов, который:
      DB_NAME=workouts.db
      ```
 
-4. Запустите:  
+3. Запустите:  
    ```bash
-   python bot.py
+   python main.py
    ```
 
 ---
