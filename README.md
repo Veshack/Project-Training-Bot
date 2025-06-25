@@ -17,8 +17,8 @@ Telegram-бот для спортсменов, который:
 
 **Установка**  
 1. Установите библиотеки
-   '''pip install python-telegram-bot matplotlib
-   '''
+   ```pip install python-telegram-bot matplotlib
+   ```
 2. Скопируйте файл main.py
 
 3. Настройте бота:  
